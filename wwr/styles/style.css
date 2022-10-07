@@ -1,10 +1,10 @@
 div {max-width: 1600px; margin: 0 auto;}
 nav a {
-    text-align: center;
+    text-align: left;
     color: #181717;
     text-decoration: none;
 }    
-#hero-msg h1{
+#hero-msg h1, #hero-msg h4{
     text-align: center;}
 .button-box {
     text-align: center;}

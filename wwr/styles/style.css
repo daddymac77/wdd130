@@ -1,39 +1,51 @@
-div {max-width: 1600px; margin: 0 auto;}
+#content {max-width: 1600px; margin: 0 auto;}
 nav a {
     text-align: left;
     color: #181717;
     text-decoration: none;
+    padding: 35px;
 }    
 #hero-msg h1, #hero-msg h4{
     text-align: center;}
 .button-box {
     text-align: center;}
+main section img {
+        box-sizing: border-box;}
 main section {
     text-align: center;}
-body {
+body {font-family: Arial, Helvetica, sans-serif; 
+    font-size: 22px; margin: 0; padding: 0;
     background-color: rgb(148, 179, 197);}
 header {
     background-color: #f1d6a0;}
 nav a:hover {
     background-color: #e9ad7c; color: black;}
-.book, .join {
-    background-color: #c4e0da; color: black; text-decoration: none;}
+.book, .join {font-size: 18px;
+    background-color: #c4e0da; color: black;
+    margin-top: 50px; border-radius: 5px;
+    padding: 15px 30px; text-decoration: none;}
 .book:hover, .join:hover {
     background-color: #f3d598; color: black;}
-.msg {background-color: #3b4d5c;}
-footer {
-    background-color: #345d70; text-decoration: none; color: black; text-align: center;}
+.rivers-card, .camping-card, .rapids-card {margin: 200px 0;}
+.msg {padding: 35px;
+    line-height: 1.5em;background-color: #3b4d5c;}
+footer {padding: 25px 50px;  margin-top: 200px;
+    background-color: #345d70; text-decoration:
+     none; color: black; text-align: center;}
 #background {
     height: 725px; background-color: rgb(165, 192, 216);
 }
-.home-title {
-    color: #131211;
-}    
+.home-title {margin-top: 10px;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em; color: #0c0c0b;
+}
+h2 {margin: 0;}
 .msg h2 {
-    color: #0c0c0b;
+    color: #e4e4da;
 }    
-.msg p{
-    color: #0e0d0c;
+.msg p{font-size: .8em;
+    padding-bottom: 15px;
+    color: #c7c1bc;
 }      
 footer a {
     color: #4d4a49;
@@ -46,10 +58,13 @@ footer a:hover {
 .logo {
     width: 80px;
 }
-.icon {
+#logo_link {padding-top: 5px;}
+.icon {padding-top: 10px;
     width: 80px;
 }
 #hero-img {width: 100%;}
 footer p a:hover {
     text-decoration: underline;
 }    
+footer .social img {padding-top: 15px;}
+.card-img {border: 10px solid black;}

@@ -1,4 +1,0 @@
-main section {display: grid; grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 20px}
-img {grid-column: 1/4;
-grid-row: 1/2;

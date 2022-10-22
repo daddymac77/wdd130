@@ -1,0 +1,18 @@
+.content1 {display: grid; grid-template-columns: 1fr 1fr; }
+img {width: 500px;
+    height: 500px;
+        position: absolute;
+        left: 10px;
+        top: 50px;
+        z-index: -1;
+      }
+h2 {font-family: 'Times New Roman', Times, serif; position: absolute;
+    right: 50px;
+    top: 300px;
+    z-index: 1; margin-right: 100px;
+        font-size: 100px; text-align: right; color: red;}
+h1 {font-family: 'Times New Roman', Times, serif; font-size: 150px; text-align: center; z-index: 1;}
+.grey {grid-column: 2/3; background-color: grey;
+width: auto;
+height: 500px; z-index: -1;
+}

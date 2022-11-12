@@ -119,19 +119,19 @@ footer .social img {padding-top: 15px;}
 .salmon-river-card img {border: 5px solid black; border-radius: 10px; box-shadow: 10px 10px 10px #6f7364;}
 .salmon-river-text {grid-column: 2/3;
         grid-row: 2/3; width: 600px;
-    height: 300px; margin-right: 50px; margin-top: 100px; margin-left: -50px;}
-.salmon-river-text p, .desolation-river-txt p, .grand-canyon-txt p {padding: 20px; font-family: 'Times New Roman', Times, serif; font-size: 0.75em;}
+    height: 400px; margin-right: 50px; margin-top: 100px; margin-left: -50px;}
+.salmon-river-text p, .desolation-river-txt p, .grand-canyon-txt p {padding: 20px; font-family: 'Times New Roman', Times, serif; font-size: 0.85em;}
 .desolation-river-card {grid-column: 2/3;
     grid-row:3/4; margin: 200px 0px 50px 50px;}
 .desolation-river-card img {border: 5px solid black; border-radius: 10px; box-shadow: 10px 10px 10px #6f7364;}
 .desolation-river-txt {grid-column: 1/2;
 grid-row: 3/4; width: 600px;
-height: 300px; padding: 50px; margin-top: 200px;}
+height: 400px; padding: 50px; margin-top: 200px;}
 .grand-canyon-card {grid-column: 1/2; 
     grid-row: 4/5; margin-left: 50px; margin-top: 200px;}
 .grand-canyon-card img {border: 5px solid black; border-radius: 10px; box-shadow: 10px 10px 10px #6f7364;}
 .grand-canyon-txt {grid-column: 2/3; grid-row: 4/5; width: 600px;
-    height: 300px; padding: 50px; margin-right: 50px; margin-top: 200px; margin-left: -100px;
+    height: 400px; padding: 50px; margin-right: 50px; margin-top: 200px; margin-left: -100px;
     }
 
 @media screen and (max-width: 900px) {

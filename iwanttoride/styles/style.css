@@ -1,0 +1,52 @@
+#content {max-width: 1600px; margin: 0 auto;}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: left;
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    padding: 35px;
+}  
+.logo {
+    width: 80px;
+}
+#logo_link {padding-top: 5px; 
+    justify-self: center;
+    align-self: center;}
+.icon {padding-top: 10px;
+    width: 80px;}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+header {
+    background-color: #A42212;}
+nav a:hover {
+    color: rgb(241, 235, 235);}
+
+body {
+    background-image: url('img_girl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+      
+.social-top {display: flex; justify-content: space-around; 
+    background-color: #A42212; font-size: 1.5em; color: #11100f;}
+.social-top a img {width: 50px;}
+.social img {padding-top: 15px ;}
+footer {padding: 25px 50px;  margin-top: 200px;
+    background-color: #A42212; text-decoration:
+     none; color: rgb(219, 212, 212); text-align: center; display: flex;
+     justify-content: space-around;
+     align-items: center;}
+footer a {
+    color: #f8f2f0;
+    font-size: 1.5em; text-decoration: none;
+}    
+footer a:hover {
+    color: #11100f;}
+footer .social img {padding-top: 15px;}

@@ -27,7 +27,10 @@ header {
 #hero {background-color: #0a1b27;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+   
 }
+body {background-image: url('..images/design.png'); background-repeat: repeat;
+background-attachment: fixed; background-size: cover;}
 #hero-box {
     grid-column: 2/3; margin-top: 50px;
     grid-row: 1/2;}

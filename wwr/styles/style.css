@@ -61,7 +61,7 @@ nav a:hover {
 #background {grid-column: 1/11; grid-row: 4/9;}
 
 .msg {grid-column: 6/10; grid-row: 6/7; padding: 35px;
-    line-height: 1.5em;background-color: #3b4d5c; box-shadow: 5px 5px 10px #6f7364;}
+    line-height: 1.5em; background-color: #3b4d5c; box-shadow: 5px 5px 10px #6f7364;}
 footer {padding: 25px 50px;  margin-top: 200px;
     background-color: #345d70; text-decoration:
      none; color: black; text-align: center; display: flex;

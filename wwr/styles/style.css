@@ -70,6 +70,7 @@ footer {padding: 25px 50px;  margin-top: 200px;
 #background {
     height: 725px; background-color: rgb(165, 192, 216);
 }
+
 .home-title {margin-top: 10px;
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em; color: #0c0c0b;
@@ -107,6 +108,7 @@ footer .social img {padding-top: 15px;}
         opacity: .6;
         transform: scale(1.1);}
 .mountains {grid-column: 2/7; grid-row: 5/8; width: 100%; box-shadow: 5px 5px 10px #6f7364;}
+.button {grid-column: 2/8 ; grid-row: 1/2;}
 
 
 .river-grid {display: grid;

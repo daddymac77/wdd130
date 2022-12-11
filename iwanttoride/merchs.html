@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&family=RocknRoll+One&display=swap" rel="stylesheet">
+    <title>I want to ride my bike</title>
+</head>
+<body>
+    <div id="content"></div>
+    <header>
+        <a id="logolink" href="index.html">
+            <img class="logo" src="images/DESIGN BLACK.png" alt="IWTRMB logo">
+        </a>
+        <nav>
+            <a href="races.html">Races</a>
+            <a href="product_reviews.html">Product Reviews</a>
+            <a href="merchs.html">MERCHS</a>
+        </nav>
+        
+    </header>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          background-color:  #0a1b27;
+          padding: 20px;
+          font-family: Arial;
+        }
+        
+        /* Center website */
+        .main {
+          max-width: 1000px;
+          margin: auto;
+        }
+        h2, h4, p {color: azure;}
+        h1 {
+          font-size: 50px;
+          word-break: break-all; color: azure;
+        }
+        
+        .row {
+          margin: 10px -16px;
+        }
+        
+        /* Add padding BETWEEN each column */
+        .row,
+        .row > .column {
+          padding: 8px;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          display: none; /* Hide all elements by default */
+        }
+        
+        /* Clear floats after rows */ 
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Content */
+        .content {
+          background-color: rgb(27, 51, 58);
+          padding: 10px;
+        }
+        
+        /* The "show" class is added to the filtered elements */
+        .show {
+          display: block;
+        }
+        
+        /* Style the buttons */
+        .btn {
+          border: none;
+          outline: none;
+          padding: 12px 16px;
+          background-color: white;
+          cursor: pointer; color: black;
+        }
+        
+        .btn:hover {
+          background-color: #ddd;color: #0a1b27;
+        }
+        
+        .btn.active {
+          background-color: #E7C24F;
+          color: white;
+        }
+        </style>
+       
+        
+        
+        <!-- MAIN (Center website) -->
+        <div class="main">
+        
+        <h1>I WANT TO RIDE MY BIKE MERCHS!</h1>
+        <hr>
+        
+        <h2>ORDER NOW!</h2>
+        
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('nature')"> CAPS PRINTED</button>
+          <button class="btn" onclick="filterSelection('cars')"> IWTRMB SHIRTS</button>
+          <button class="btn" onclick="filterSelection('people')"> SPECIAL EDITION CAPS</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column nature">
+            <div class="content">
+              <img src="images/new6.jpg" alt="Mountains" style="width:100%">
+              <h4>BLACK AND WHITE COLOR</h4>
+              <p>275 PHP EACH</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="images/new7.jpg" alt="Lights" style="width:100%">
+              <h4>RED COLOR</h4>
+              <p>300 PHP EACH</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="images/new8.jpg" alt="Nature" style="width:100%">
+              <h4>BLACK COLOR</h4>
+              <p>250 PHP EACH</p>
+            </div>
+          </div>
+          
+          <div class="column cars">
+            <div class="content">
+              <img src="images/new2.jpg" alt="Car" style="width:100%">
+              <h4>SLIM FIT RAGLAN SHIRT</h4>
+              <p>350 EACH</p>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="images/new3.jpg" alt="Car" style="width:100%">
+              <h4>IWTRMB CAP AND SHIRT PAIR</h4>
+              <p>600 PHP PAIR</p>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="images/CAP.png" alt="Car" style="width:100%">
+              <h4>IWTRMB CAP EMBROIDERED</h4>
+              <p>350 EACH</p>
+            </div>
+          </div>
+        
+          <div class="column people">
+            <div class="content">
+              <img src="images/NEWCAP.jpg" alt="Car" style="width:100%">
+              <h4>BLACK AND CREAM COLOR</h4>
+              <p>1,250 EACH</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="images/new5.jpg" alt="Car" style="width:100%">
+              <h4>SPECIAL EDITION IWTRMB CAP</h4>
+              <p>LIMITED WHILE SUPPLY LAST</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="images/caps7.jpg" alt="Car" style="width:100%">
+              <h4>BLACK COLOR</h4>
+              <p>1,000 EACH</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        
+        <!-- END MAIN -->
+        </div>
+        
+        <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+    <footer>
+        <p>I want to ride my bike! &copy; 2022 - Mc-Coy Crisanto</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="https://www.facebook.com/Mckwentovlogs">Follow Me!</a></p>
+        <div class="social">
+            <a href="https://https://www.facebook.com/Mckwentovlogs" target="_blank">
+                <img src="images/facebuk.jpg" alt="fb icon">
+            </a>
+            <a href="https://www.youtube.com/channel/UCi-RBypAPcvaPPjQ_g8--YQ" target="_blank">
+                <img src="images/yutub.jpg" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/insta.jpg" alt="instagram icon">
+            </a>
+        </div>
+    
+    </footer>    
+    
+        
+</body>
+</html>
